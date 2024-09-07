@@ -1,0 +1,172 @@
+* {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.li-item a {
+	color: black;
+	text-decoration: none;
+}
+
+.li-item:hover {
+	background-color: #3b71ca;
+	cursor: pointer;
+}
+
+.li-item:hover a {
+	color: white;
+	text-decoration: none;
+}
+
+.color-box {
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	margin: 5px;
+	border: 2px solid transparent;
+	cursor: pointer;
+	position: relative;
+	border: 1px, solid, gray;
+}
+
+.color-box.selected {
+	border-color: black;
+}
+
+.color-box .checkmark {
+	display: none;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	color: white;
+	font-weight: bold;
+}
+
+.color-box.selected .checkmark {
+	display: block;
+}
+
+.clear-all {
+	color: red;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+#price-slider {
+	margin-bottom: 15px;
+}
+
+.slider {
+	width: 100%;
+	margin: 15px 0;
+}
+
+.slider .range-bar {
+	width: 100%;
+	height: 6px;
+	background-color: #f1f1f1;
+	position: relative;
+	border-radius: 5px;
+}
+
+.slider .range-bar .range-fill {
+	height: 100%;
+	background-color: red;
+	border-radius: 5px;
+	position: absolute;
+}
+
+.slider .range-bar .handle {
+	width: 20px;
+	height: 20px;
+	background-color: red;
+	border-radius: 50%;
+	position: absolute;
+	top: -7px;
+	cursor: pointer;
+}
+
+.price-input {
+	max-width: 150px;
+	display: inline-block;
+}
+
+.card-img-top:hover {
+	cursor: pointer;
+}
+
+.nav-item:hover .nav-link {
+	color: #007bff;
+}
+
+#n1:hover #n2 {
+	color: #007bff;
+}
+
+a {
+	color: black;
+}
+
+.tab-user::before {
+	content: '';
+	background-color: none;
+	position: absolute;
+	top: -20px;
+	left: 0;
+	width: 100%;
+	height: 30px;
+}
+
+.tab-user {
+	display: none;
+	position: absolute;
+	top: 40px;
+	z-index: 3;
+	left: 0;
+	background-color: white;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.user-tab:hover .tab-user {
+	display: block;
+	cursor: pointer;
+}
+
+.user-ul-li:hover {
+	background-color: lightgrey;
+}
+
+.tab-user_ul {
+    width: 350px;
+    left: -235px;
+}
+.user-ul-li {
+	position: relative;
+	width: 100%;
+}
+
+.rating-form input {
+	display: none;
+}
+
+.rating-form {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.rating-form input:not(:checked) ~ label:hover, .rating-form input:not(:checked) 
+	~ label:hover ~ label {
+	color: gold;
+}
+
+input:checked ~ label {
+	color: gold;
+}
+
+.row-product_total {
+    vertical-align: middle; 
+    text-align: center; 
+}
